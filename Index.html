@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listen2000</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="Picture/image-removebg-preview.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.css'
+    integrity='sha512-kYOMiaoKMZJ+4BIGOKuBJ19/SvBNKsuThdvZHppiLjJ/1RAEr64IQIoUk2cww5LJLWPRomM4N3j4+e0SzYe5Dg=='
+    crossorigin='anonymous' />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Prompt:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+    rel="stylesheet" />
+  <script src="js/topsong.js" defer></script>
+<body>
+  <header>
+    <!--sidebar Desktop-->
+    <div class="side-bar d-none d-sm-block ">
+      <div class="home-container">
+        <div class="logo d-none d-sm-block  ">
+          <img src="Picture/image-removebg-preview.png" alt="" >
+        </div>
+
+        <div class="home d-none d-sm-block ">
+          <div class="side">
+            <h1><i class="bi-house"></i>Home</h1>
+          </div>
+        </div>
+      </div>
+      <div class="playlist d-none d-sm-block ">
+        <button class="btn btn-toggle align-items-center rounded collapsed link-light" data-bs-toggle="collapse"
+          data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Playlist
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="pl-menu btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-light rounded"><i class="bi-plus-circle"></i>Overview</a></li>
+            <li><a href="#" class="link-light rounded">all playlist</a></li>
+            <li><a href="#" class="link-light rounded">rock & roll</a></li>
+            <li><a href="#" class="link-light rounded">rapisgod</a></li>
+            <li><a href="fg.html" class="link-light rounded">thaisong</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="playlist d-none d-sm-block ">
+        <button class="btn btn-toggle rounded collapsed link-light" data-bs-toggle="collapse"
+          data-bs-target="#favourite-collapse" aria-expanded="false">
+          favourite
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="collapse" id="favourite-collapse">
+          <ul class="pl-menu btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-light rounded">sillyfool</a></li>
+            <li><a href="#" class="link-light rounded">1975</a></li>
+            <li><a href="#" class="link-light rounded">Bodyslam</a></li>
+            <li><a href="#" class="link-light rounded">Queen</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="playlist d-none d-sm-block ">
+        <button class="btn btn-toggle align-items-center rounded collapsed link-light" data-bs-toggle="collapse"
+          data-bs-target="#library-collapse" aria-expanded="false">
+          library
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="collapse" id="library-collapse">
+          <ul class="pl-menu btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-light rounded">Like</a></li>
+            <li><a href="#" class="link-light rounded">Watchlater</a></li>
+            <li><a href="#" class="link-light rounded">queue</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="playlist d-none d-sm-block">
+        <button class="btn btn-toggle align-items-center rounded collapsed link-light" data-bs-toggle="collapse"
+          data-bs-target="#support-collapse" aria-expanded="false">
+          support
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="collapse" id="support-collapse">
+          <ul class="pl-menu btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="contact.html" class="link-light rounded">contact</a></li>
+            <li><a href="#" class="link-light rounded">Search</a></li>
+            <li><a href="#" class="link-light rounded">???</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--Banner-->
+  <div class="menu-banner">
+    <div class="banner-text">
+      <div class="box-search d-none d-sm-block ">
+        <input type="text" placeholder="Search songs, albums, artist and playlist... ">
+      </div>
+      <div class="style-music">
+        <p>Hiphop / Rap</p>
+      </div>
+      <div class="text-allalbum">
+        <h1>ALL ALBUM</h1>
+      </div>
+      <div class="text-tupac">
+        <h1>Tupac</h1>
+      </div>
+      <div class="listen">
+        <p>Listen Now</p>
+      </div>
+      <div class="fav">
+        <div class="epepep">
+          <img src="Picture/Ellipse 1.png" alt="">
+        </div>
+        <div class="love">
+          <img src="Picture/heart2 1.png" alt="">
+        </div>
+        <div class="box-user">
+          <div class="user d-none d-sm-block">
+            <img src="Picture/eric cantona.png" alt="">
+            <p>Eric Cantona</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--For you-->
+  <div class="for-you">
+    <h1>For You</h1>
+    <div class="song">
+      <div class="song1"><img src="Picture/3424242.png"></div>
+      <div class="song2"><img src="Picture/Blur (1) 1.png" alt=""></div>
+      <div class="song3"><img src="Picture/manson.png" alt=""></div>
+      <div class="song4"><img src="Picture/Nirvana.jpg" alt=""></div>
+    </div>
+  </div>
+
+  <!--Rock-->
+   <div class="rock-song">
+    <div class="rock-name">
+      <h1>Rock</h1>
+    </div>
+    <i id="left" class="fa-solid fa-angle-left "></i>
+    <div class="rocklist">
+      <img src="Picture/bodyslam rock.png" alt="img" draggable="false">
+      <img src="Picture/linkinpark rock.png" alt="img" draggable="false">
+      <img src="Picture/jimi rock.png" alt="img" draggable="false">
+    </div>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div> 
+
+  <!--Top Song-->
+  <div class="top-song">
+    <div class="top-name">
+      <h1>Top Song of the Decade </h1>
+    </div>
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <div class="topsong">
+      <img src="Picture/50s.png" alt="img" draggable="false">
+      <img src="Picture/60 1.png" alt="img" draggable="false">
+      <img src="Picture/70 1.png" alt="img" draggable="false">
+      <img src="Picture/80 1.png" alt="img" draggable="false">
+      <img src="Picture/backstreet boys.png" alt="img" draggable="false">
+      <img src="Picture/00s.png" alt="img" draggable="false">
+      <img src="Picture/kerry.png" alt="img" draggable="false">
+      <img src="Picture/1975.png" alt="img" draggable="false">
+    </div>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div>
+
+  <!--recommend-->
+  <div id="playlist-recommend">
+    <h1>Recommended for you</h1>
+    <div class="song-playlist">
+      <div class="song-box1">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>ยาพิษ</h3>
+        <span>Bodyslam</span>
+        <p>4.23</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>อกหัก</h3>
+        <span>Bodyslam</span>
+        <p>4.09</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/image 20.png" alt="">
+        <h3>ความเชื่อ</h3>
+        <span>Bodyslam</span>
+        <p>4.58</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>แสงสุดท้าย</h3>
+        <span>Bodyslam</span>
+        <p>4.44</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/image 21.png" alt="">
+        <h3>เสียดาย</h3>
+        <span>Bodyslam</span>
+        <p>4.11</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/image 21.png" alt="">
+        <h3>งมงาย</h3>
+        <span>Bodyslam</span>
+        <p>4.01</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/image 20.png" alt="">
+        <h3>ปลายทาง</h3>
+        <span>Bodyslam</span>
+        <p>4.11</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>เสี้ยววินาที</h3>
+        <span>Bodyslam</span>
+        <p>4.23</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/image 20.png" alt="">
+        <h3>ท่านผู้ชม</h3>
+        <span>Bodyslam</span>
+        <p>4.23</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/Rectangle 91.png" alt="" >
+        <h3>Sticker</h3>
+        <span>Bodyslam</span>
+        <p>4.30</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/image 21.png" alt="">
+        <h3>คราม</h3>
+        <span>Bodyslam</span>
+        <p>4.21</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>ความรัก</h3>
+        <span>Bodyslam</span>
+        <p>5.09</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>เปราะบาง</h3>
+        <span>Bodyslam</span>
+        <p>4.40</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>คนที่ถูกรัก</h3>
+        <span>Bodyslam</span>
+        <p>4.30</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>วิชาตัวเบา</h3>
+        <span>Bodyslam</span>
+        <p>4.38</p>
+      </div>
+    </div>
+
+  <!--made-by-you-->
+  <div class="made-by-you">
+    <h1 class="text-light">Made by you</h1>
+    <div class="madebyyou">
+      <div class="list-play">
+        <img src="Picture/stop cry.png" 0 alt="">
+        <h3>Stop Crying Your Heart Out</h3>
+        <p>Oasis</p>
+      </div>
+      
+      <div class="list-play2">
+        <img src="Picture/bohe.png" 0 alt="">
+        <h3>bohemian rhapsody</h3>
+        <p>Queen</p>
+      </div>
+      <div class="list-play3">
+        <img src="Picture/come as.png" 0 alt="">
+        <h3>Come As Your Are</h3>
+        <p>Nirvana</p>
+      </div>
+      <div class="list-play4">
+        <img src="Picture/master.png" 0 alt="">
+        <h3>Master of Puppets</h3>
+        <p>Metallica</p>
+      </div>
+      <div class="list-play5">
+        <img src="Picture/bea.png" 0 alt="">
+        <h3>The Beautiful people</h3>
+        <p>Marilyn Manson</p>
+      </div>
+      <div class="list-play6">
+        <img src="Picture/elvis.jpg" 0 alt="">
+        <h3>Can't Help Falling In Love</h3>
+        <p>Elvis Presley</p>
+      </div>
+    </div> 
+
+    <footer>
+      <div class="footer container-fluid">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-0 ">
+          <div class="col mb-3">
+            <a href="/" class="logo-footer d-flex align-items-center mb-2 link-body-emphasis text-decoration-none">
+              <img src="Picture/image-removebg-preview 1.png" alt="">
+            </a>
+          </div>
+      
+          <div class="footer-box col-6 col-md-2 mb-3">
+            <h5 class="title-footer">บริษัท</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">เกี่ยวกับเรา</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">การสนุบสนุน</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">ติดต่อเรา</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-box col-6 col-md-2 mb-3">
+            <h5 class="title-footer">เพลง</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">ศิลปิน</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">อัลบั้ม</a></li>
+  
+            </ul>
+          </div>
+  
+          <div class="footer-box col  mb-3 d-grid justify-content-end">
+            <h5 class="title-footer">ช่องทางการติดต่อ</h5>
+            <a href="" class="social-img ">
+              <img src="Picture/instagram.png" alt="">
+              <img src="Picture/facebook.png" alt="">
+              <img src="Picture/line.png" alt="">
+              <img src="Picture/x.png" alt="">
+              <img src="Picture/tiktok.png" alt="">
+            </a>
+          </div>
+          
+        </footer>
+      </div>
+      <div class="bot text-white d-flex justify-content-center">© Copyright ILISTEN2000, 2023. All rights reserved.</div>
+    </footer>
+  
+  <!--Footer-->
+
+
+  <!--Sidebar Mobile-->
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top bg-black d-sm-none ">
+      <div class="container-fluid">
+        <button class="navbar-toggler bg-black" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="48" viewBox="0 0 54 48" fill="none">
+            <path d="M6.75 36V32H47.25V36H6.75ZM6.75 26V22H47.25V26H6.75ZM6.75 16V12H47.25V16H6.75Z" fill="#F8F8F8" />
+          </svg>
+        </button>
+        <a class="logo navbar-brand" href="Index.html"><img src="Picture/image-removebg-preview.png"></a>
+
+        <i class="bi bi-search"></i>
+
+        <img src="Picture/eric cantona.png" alt="">
+        </i>
+        <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel "><img src="Picture/image-removebg-preview.png" alt="" style=" width: 200px;
+              height: 100px;;"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <!-- PLAYLIST -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  PLAYLIST
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-plus-circle"></i>create ...</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">ALL PLAYLIST</a></li>
+                  <li><a class="dropdown-item" href="#">ROCK & ROLL</a></li>
+                  <li><a class="dropdown-item" href="#">RAPISGOD</a></li>
+                  <li><a class="dropdown-item" href="fg.html">THAISONG</a></li>
+
+                </ul>
+              </li>
+              <!-- FaVorite -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  FAVORITE
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Artist</a></li>
+                  <li><a class="dropdown-item" href="#">Albums</a></li>
+                  <li><a class="dropdown-item" href="#">Tracks</a></li>
+                </ul>
+              </li>
+              <!-- Library -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Library
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item " href="#">ALL PLAYLIST</a></li>
+                  <li><a class="dropdown-item" href="#">ROCK & ROLL</a></li>
+                  <li><a class="dropdown-item" href="#">RAPISGOD</a></li>
+                  <li><a class="dropdown-item" href="#">THAISONG</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-plus-circle"></i>create ...</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  SUPPORT
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="contact.html">CONTACT</a></li>
+                  <li><a class="dropdown-item" href="#">SEARCH</a></li>
+                  <li><a class="dropdown-item" href="#">????</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Play Music-->
+
+  <div class="play-music fixed-bottom">
+    <div class="container-fluid d-grid gap-3 align-items-center " style="grid-template-columns: 1fr 2fr 1fr;">
+      <div class="play-tool">
+        <i class="bi-shuffle"></i>
+        <i class="bi-skip-backward "></i>
+        <i class="bi-pause-circle-fill "></i>
+        <i class="bi-skip-forward"></i>
+        <i class="bi-repeat "></i>
+      </div>
+
+      <div class="music-show d-flex align-items-center justify-content-center ">
+        <img src="Picture/bodyslam.png" alt="" width="100px" height="80px">
+        <div class="name-somg">
+          <h5>ยาพิษ</h5>
+          <p>ฺBodyslam</p>
+          <input type="range" name="" id="music">
+        </div>
+      </div>
+
+      <div class="volume d-flex align-items-center justify-content-end">
+        <i class="bi-volume-down"></i>
+        <input type="range" name="" id="volume">
+        <i class="bi-volume-up"></i>
+        <i class="bi bi-list-task"></i>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

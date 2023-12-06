@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listen2000</title>
+  <link rel="stylesheet" href="css/fg.css">
+  <link rel="icon" type="image/x-icon" href="Picture/image-removebg-preview.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.css'
+    integrity='sha512-kYOMiaoKMZJ+4BIGOKuBJ19/SvBNKsuThdvZHppiLjJ/1RAEr64IQIoUk2cww5LJLWPRomM4N3j4+e0SzYe5Dg=='
+    crossorigin='anonymous' />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:wght@100&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Prompt:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+    rel="stylesheet" />
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <!--sidebar Desktop-->
+    <div class="side-bar d-none d-sm-block ">
+      <div class="home-container">
+        <div class="logo d-none d-sm-block  ">
+          <a href="Index.html"><img src="Picture/image-removebg-preview.png" alt=""></a>
+        </div>
+
+        <div class="home d-none d-sm-block ">
+          <div class="">
+            <h1><i class="bi-house"></i>Home</h1>
+          </div>
+        </div>
+      </div>
+      <div class="playlist d-none d-sm-block ">
+        <button class="btn btn-toggle align-items-center rounded collapsed link-light" data-bs-toggle="collapse"
+          data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Playlist
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="pl-menu btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-light rounded"><i class="bi-plus-circle"></i>Overview</a></li>
+            <li><a href="#" class="link-light rounded">all playlist</a></li>
+            <li><a href="#" class="link-light rounded">rock & roll</a></li>
+            <li><a href="#" class="link-light rounded">rapisgod</a></li>
+            <li><a href="#" class="link-light rounded">thaisong</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="playlist d-none d-sm-block ">
+        <button class="btn btn-toggle rounded collapsed link-light" data-bs-toggle="collapse"
+          data-bs-target="#favourite-collapse" aria-expanded="false">
+          favourite
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="collapse" id="favourite-collapse">
+          <ul class="pl-menu btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-light rounded">sillyfool</a></li>
+            <li><a href="#" class="link-light rounded">1975</a></li>
+            <li><a href="#" class="link-light rounded">Bodyslam</a></li>
+            <li><a href="#" class="link-light rounded">Queen</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="playlist d-none d-sm-block ">
+        <button class="btn btn-toggle align-items-center rounded collapsed link-light" data-bs-toggle="collapse"
+          data-bs-target="#library-collapse" aria-expanded="false">
+          library
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="collapse" id="library-collapse">
+          <ul class="pl-menu btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-light rounded">Like</a></li>
+            <li><a href="#" class="link-light rounded">Watchlater</a></li>
+            <li><a href="#" class="link-light rounded">queue</a></li>
+          </ul>
+        </div>
+      </div>
+        <div class="playlist d-none d-sm-block">
+          <button class="btn btn-toggle align-items-center rounded collapsed link-light" data-bs-toggle="collapse"
+            data-bs-target="#support-collapse" aria-expanded="false">
+            support
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="collapse" id="support-collapse">
+            <ul class="pl-menu btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-light rounded">contact</a></li>
+              <li><a href="#" class="link-light rounded">Search</a></li>
+              <li><a href="#" class="link-light rounded">???</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </header>
+  <!-- nav-bar -->
+  <div class="nav-bar d-none d-sm-block">
+    <div class="search">
+      <i class="bi-search"></i>
+      <input type="text" placeholder="Search songs, albums, artist and playlist... ">
+    </div>
+    <div class="profile" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <i class="bi-person-fill"></i>
+      <span>Eric Contana</span>
+    </div>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Eric Contana</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Edit:
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <!--Song-->
+  <div id="playlist">
+    <h1>Playlist</h1>
+    <div class="song-playlist">
+      <div class="song-box1">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>ยาพิษ</h3>
+        <span>Bodyslam</span>
+        <p>4.23</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>อกหัก</h3>
+        <span>Bodyslam</span>
+        <p>4.09</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/image 20.png" alt="">
+        <h3>ความเชื่อ</h3>
+        <span>Bodyslam</span>
+        <p>4.58</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>แสงสุดท้าย</h3>
+        <span>Bodyslam</span>
+        <p>4.44</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/image 21.png" alt="">
+        <h3>เสียดาย</h3>
+        <span>Bodyslam</span>
+        <p>4.11</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/image 21.png" alt="">
+        <h3>งมงาย</h3>
+        <span>Bodyslam</span>
+        <p>4.01</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/image 20.png" alt="">
+        <h3>ปลายทาง</h3>
+        <span>Bodyslam</span>
+        <p>4.11</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>เสี้ยววินาที</h3>
+        <span>Bodyslam</span>
+        <p>4.23</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/image 20.png" alt="">
+        <h3>ท่านผู้ชม</h3>
+        <span>Bodyslam</span>
+        <p>4.23</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/Rectangle 91.png" alt="" >
+        <h3>Sticker</h3>
+        <span>Bodyslam</span>
+        <p>4.30</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/image 21.png" alt="">
+        <h3>คราม</h3>
+        <span>Bodyslam</span>
+        <p>4.21</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>ความรัก</h3>
+        <span>Bodyslam</span>
+        <p>5.09</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>เปราะบาง</h3>
+        <span>Bodyslam</span>
+        <p>4.40</p>
+      </div>
+      <div class="song-box2">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>คนที่ถูกรัก</h3>
+        <span>Bodyslam</span>
+        <p>4.30</p>
+      </div>
+      <div class="song-box1">
+        <img src="Picture/Rectangle 91.png" alt="">
+        <h3>วิชาตัวเบา</h3>
+        <span>Bodyslam</span>
+        <p>4.38</p>
+      </div>
+    </div>
+
+    <!--Play Song-->
+    <div class="play-song">
+      <div class="song-control">
+        <img src="Picture/Rectangle 21.png" alt="">
+        <span>ยาพิษ</span>
+        <i class="bi-star"></i>
+        <br>
+        <p>Bodyslam</p>
+      </div>
+      <div class="play">
+        <div class="control">
+          <img src="Picture/fast-forward 2.png" onclick="prevTrack()" alt="">
+          <i class="bi-pause-circle" onclick="playpauseTrack()"></i>
+          <img class="fast2"src="Picture/fast-forward 2.png" onclick="nextTrack()">
+        </div>
+        <div class="control2">
+          <img src="Picture/shuffle.png" onclick="playRandom()">
+          <img src="Picture/reload.png" onclick="repeatTrack()">
+          <img src="Picture/next 1.png" alt="">
+        </div>
+        <div class="sound">
+          <img src="Picture/sound-waves.png" alt="">
+          <span>Loseless</span>
+        </div>
+        <div class="slider_container">
+          <div class="current-time" onchange="setUpdate()">00.00</div>
+          <input type="range" min="1" max="100" value="50" class="seek_slider" onchange="seekTo()">
+          <div class="total-duration">00.00</div>
+        </div>
+      </div>
+    </div>
+    <div class="add">
+      <div class="add-song">
+        <img src="Picture/add-to-playlist 1.png" alt="">
+      </div>
+      <div class="lyric">
+        <img src="Picture/chatw 1.png" alt="">
+      </div>
+      <div class="note">
+        <img src="Picture/musical-note 1.png" alt="">
+      </div>
+    </div>
+    <div class="text-lyric d-none d-sm-block">
+      <div class="text-box d-none d-sm-block">
+        <span class="d-none d-sm-block">
+          คำง่ายๆ แต่ความหมายสุดลึกล้ำคำง่ายๆ ที่เธอใช้ประจำ ซ้ำไปซ้ำมาคิดจะพูด แต่ก็พูดอย่างไม่คิดรู้ไหมว่า หนึ่งชีวิตของใคร ต้องเกิดปัญหาเจ็บช้ำ ปางตาย ชีวิต วุ่นวาย (คิดมันไปว่าจริง)ลุ่มหลง เชื่อใจ กับถ้อยคำ ร้ายๆเอะอะก็ว่ารัก เอะอะก็คิดถึง แต่เธอไม่เคยซึ้งไม่เคยเข้าใจไม่เคยทำให้รู้ ไม่เคยทำให้เห็น ไม่ห่วงเลยว่าใครจะเป็นจะตายคำพูดที่ไม่เคยคิด ที่จริงก็คือยาพิษ ทำลายชีวิตของคนงมงายเธอจะรู้บ้างหรือเปล่า (คิดหรือเปล่า) ว่ามีใครเขาทุกข์ทนพิษของคำคน ร้ายแรงแค่ไหนคำง่ายๆ ที่เธอใช้บอกกับฉันรู้ไว้ด้วย ว่าความหมายของมัน สำคัญแค่ไหนเจ็บช้ำ ปางตาย ชีวิต วุ่นวาย (คิดมันไปว่าจริง)ลุ่มหลง เชื่อใจ กับถ้อยคำ ร้ายๆเอะอะก็ว่ารัก เอะอะก็คิดถึง แต่เธอไม่เคยซึ้งไม่เคยเข้าใจไม่เคยทำให้รู้ ไม่เคยทำให้เห็น ไม่ห่วงเลยว่าใครจะเป็นจะตายคำพูดที่ไม่เคยคิด ที่จริงก็คือยาพิษ ทำลายชีวิตของคนงมงายเธอจะรู้บ้างหรือเปล่า (คิดหรือเปล่า) ว่ามีใครเขาทุกข์ทนพิษของคำคน ร้ายแรงแค่ไหนล้านคำลวง หลอกหลอนหัวใจ วาดวิมาน บนฟ้าแสนไกลล้วนเติมแต่งจากคำของใคร แล้วความจริง อยู่ตรงที่ใดเชื่อคำลวง สุดท้ายเสียใจ โลกความจริง เรียนรู้หมุนไปทบและทวน ใตร่ตรองข้างใน ให้เวลาตัดสิน หัวใจเอะอะก็ว่ารัก เอะอะก็คิดถึง แต่เธอไม่เคยซึ้งไม่เคยเข้าใจไม่เคยทำให้รู้ ไม่เคยทำให้เห็น ไม่ห่วงเลยว่าใครจะเป็นจะตายคำพูดที่ไม่เคยคิด ที่จริงก็คือยาพิษ ทำลายชีวิตของคนงมงายเธอจะรู้บ้างหรือเปล่า (รู้บ้างหรือเปล่า)คำที่เธอนั้นพร่ำบอก (รักที่ลวงหลอก)ทำให้ใครเขาทุกข์ทน พิษของคำคน
+        </span>
+      </div>
+    </div>
+</body>
+<footer>
+  <div class="footer-contact">
+    <img class="foot-logo"src="Picture/image-removebg-preview 1.png" alt="">
+    <div class="company">
+      <span>บริษัท</span>
+      <ul>
+        <li>เกี่ยวกับเรา</li>
+        <li>การสนับสนุน</li>
+        <li>ติดต่อเรา</li>
+      </ul>
+    </div>
+    <div class="music">
+      <span>เพลง</span>
+      <ul>
+        <li>ศิลปิน</li>
+        <li>อัลบั้ม</li>
+      </ul>
+    </div>
+    <div class="contact">
+      <span>ช่องทางการติดต่อ</span>
+      <ul class="social">
+        <li><img src="Picture/image 26.png" alt=""></li>
+        <li><img src="Picture/image 27.png" alt=""></li>
+        <li><img src="Picture/image 28.png" alt=""></li>
+        <li><img src="Picture/twitter 1.png" alt=""></li>
+        <li><img class="tiktok" src="Picture/image 25.png" alt=""></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bot">© Copyright ILISTEN2000, 2023. All rights reserved.</div>
+</footer>
+
+
+  <!--Sidebar Mobile-->
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top bg-black d-sm-none">
+      <div class="container-fluid">
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="logo navbar-brand" href="#"><img src="Picture/image-removebg-preview.png"></a>
+
+        <i class="bi bi-search"></i>
+        <img src="Picture/eric cantona.png" alt="">
+        </i>
+        <div class="offcanvas offcanvas-start bg-black" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="Picture/image-removebg-preview.png" alt="" width="100"></h5>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="Index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  PLAYLIST
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><i class="bi-plus-circle"></i>CREATE...</a></li>
+                  <li><a class="dropdown-item" href="#">ALL PLAYLIST</a></li>
+                  <li><a class="dropdown-item" href="#">ROCK&ROLL</a></li>
+                  <li><a class="dropdown-item" href="#">RAPISGOD</a></li>
+                  <li><a class="dropdown-item" href="fg.html">THAISONG</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">LIBRARY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contact.html">SUPPORT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="text-lyric d-sm-none">
+      <div class="text-box d-sm-none">
+        <span class="d-sm-none">
+          คำง่ายๆ แต่ความหมายสุดลึกล้ำคำง่ายๆ ที่เธอใช้ประจำ ซ้ำไปซ้ำมาคิดจะพูด แต่ก็พูดอย่างไม่คิดรู้ไหมว่า หนึ่งชีวิตของใคร ต้องเกิดปัญหาเจ็บช้ำ ปางตาย ชีวิต วุ่นวาย (คิดมันไปว่าจริง)ลุ่มหลง เชื่อใจ กับถ้อยคำ ร้ายๆเอะอะก็ว่ารัก เอะอะก็คิดถึง แต่เธอไม่เคยซึ้งไม่เคยเข้าใจไม่เคยทำให้รู้ ไม่เคยทำให้เห็น ไม่ห่วงเลยว่าใครจะเป็นจะตายคำพูดที่ไม่เคยคิด ที่จริงก็คือยาพิษ ทำลายชีวิตของคนงมงายเธอจะรู้บ้างหรือเปล่า (คิดหรือเปล่า) ว่ามีใครเขาทุกข์ทนพิษของคำคน ร้ายแรงแค่ไหนคำง่ายๆ ที่เธอใช้บอกกับฉันรู้ไว้ด้วย ว่าความหมายของมัน สำคัญแค่ไหนเจ็บช้ำ ปางตาย ชีวิต วุ่นวาย (คิดมันไปว่าจริง)ลุ่มหลง เชื่อใจ กับถ้อยคำ 
+        </span>
+      </div>
+    </div>
+
+  </header>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+</html>
